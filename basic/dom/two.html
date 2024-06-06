@@ -11,5 +11,16 @@
 <script>
    const div= document.createElement('div')
    console.log(div);
+   div.className = "main"
+   div.id = Math.round(Math.random() * 10 + 1)
+   div.setAttribute("title", "genereted title")
+   div.style.backgroundColor = "green"
+   div.style.padding = "12px"
+//    div.innerText = "Smarty Boy"
+
+   const addtext = document.createTextNode("Smarty Boy")
+div.appendChild(addtext)
+
+document.body.appendChild(div)
 </script>
 </html>
